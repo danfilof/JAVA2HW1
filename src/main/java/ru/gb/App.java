@@ -12,9 +12,8 @@ public class App {
         };
 
         for (Creature creature : creatures) {
-            Creature jump;
-            Creature run;
+            creature.jump();
+            creature.run();
         }
-
     }
 }
