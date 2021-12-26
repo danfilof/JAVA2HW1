@@ -1,6 +1,23 @@
 package ru.gb;
 
 public class Cat implements Creature {
+    private int runDistance;
+    private int climbHeight;
+
+
+    public Cat(int runDistance, int climbHeight) {
+        this.runDistance = runDistance;
+        this.climbHeight = climbHeight;
+    }
+
+    public int getRunDistance() {
+        return runDistance;
+    }
+
+    public int getClimbHeight() {
+        return climbHeight;
+    }
+
     @Override
     public void jump() {
         System.out.println("Cat jumps");
