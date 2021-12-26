@@ -14,6 +14,8 @@ public class App {
         for (Creature creature : creatures) {
             creature.jump();
             creature.run();
+            creature.runOver(creature);
+            creature.climbOver(creature);
         }
     }
 }

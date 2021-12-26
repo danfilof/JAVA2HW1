@@ -1,6 +1,6 @@
 package ru.gb;
 
-public class Human implements Creature {
+public class Human extends Creature {
     private int runDistance;
     private int climbHeight;
 

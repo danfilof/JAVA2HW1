@@ -1,7 +1,26 @@
 package ru.gb;
 
-public interface Creature extends Jumpable, Runable {
+public class Creature implements Jumpable, Runable {
+    private int runDistance;
+    private int climbHeight;
 
+    public int getRunDistance() {
+        return runDistance;
+    }
+
+    public int getClimbHeight() {
+        return climbHeight;
+    }
+
+    @Override
+    public void jump() {
+
+    }
+
+    @Override
+    public void run() {
+
+    }
 }
 
 
