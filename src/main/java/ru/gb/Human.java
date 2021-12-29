@@ -5,9 +5,9 @@ public class Human implements Creature {
     private Integer MyRun;
     private String name;
 
-    public Human (String name){
-        this.MyJump = 130;
-        this.MyRun = 100;
+    public Human (String name,int MyJump, int MyRun){
+        this.MyJump = MyJump;
+        this.MyRun = MyRun;
         this.name = name;
     }
 

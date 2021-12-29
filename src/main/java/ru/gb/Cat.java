@@ -5,9 +5,9 @@ public class Cat implements Creature {
     private Integer MyRun;
     private String name;
 
-    public Cat (String name){
-        this.MyJump = 200;
-        this.MyRun = 50;
+    public Cat (String name, int MyJump, int MyRun){
+        this.MyJump = MyJump;
+        this.MyRun = MyRun;
         this.name = name;
     }
 

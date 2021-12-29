@@ -4,9 +4,9 @@ public class App {
     public static void main(String[] args) {
 
         Creature[] creatures = {
-                new Human("Anton"),
-                new Cat("Boriska"),
-                new Robot("Siri")
+                new Human("Anton",150,100),
+                new Cat("Boriska",200,50),
+                new Robot("Siri",50,1000)
         };
 
         Obstacles[] obstacles = {

@@ -5,9 +5,9 @@ public class Robot implements Creature {
     private Integer MyRun;
     private String name;
 
-    public Robot (String name){
-        this.MyJump = 50;
-        this.MyRun = 1000;
+    public Robot (String name, int MyJump, int MyRun){
+        this.MyJump = MyJump;
+        this.MyRun = MyRun;
         this.name = name;
     }
 
