@@ -1,27 +1,12 @@
 package ru.gb;
 
-public class Creature implements Jumpable, Runable {
-    private int runDistance;
-    private int climbHeight;
+import javax.naming.Name;
 
-    public int getRunDistance() {
-        return runDistance;
-    }
-
-    public int getClimbHeight() {
-        return climbHeight;
-    }
-
-    @Override
-    public void jump() {
-
-    }
-
-    @Override
-    public void run() {
-
-    }
+public interface Creature extends Jumpable, Runable {
+    Integer getMyJump();
+    Integer getMyRun();
+    String getName();
+    String getType();
 }
-
 
 

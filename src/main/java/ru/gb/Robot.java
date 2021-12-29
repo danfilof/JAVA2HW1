@@ -1,23 +1,22 @@
 package ru.gb;
 
-public class Robot extends Creature {
-    private int runDistance;
-    private int climbHeight;
+public class Robot implements Creature {
+    private Integer MyJump;
+    private Integer MyRun;
+    private String name;
 
-
-    public Robot (int runDistance, int climbHeight) {
-        this.runDistance = runDistance;
-        this.climbHeight = climbHeight;
+    public Robot (String name){
+        this.MyJump = 50;
+        this.MyRun = 1000;
+        this.name = name;
     }
 
-    public int getRunDistance() {
-        return runDistance;
+    public String getName() {
+        return name;
     }
-
-    public int getClimbHeight() {
-        return climbHeight;
+    public String getType() {
+        return "Robot";
     }
-
 
     @Override
     public void jump() {
@@ -28,4 +27,11 @@ public class Robot extends Creature {
     public void run() {
         System.out.println("Robot runs");
     }
-}
+
+    public Integer getMyJump() {
+        return MyJump;
+    }
+
+    public Integer getMyRun() {
+        return MyRun;
+    }}

@@ -1,24 +1,23 @@
 package ru.gb;
 
-public class Wall {
-    private int heightToClimb = 6;
-    private boolean hasClimbed;
+public class Wall implements Obstacles {
+    private Integer Height;
 
-
-    public boolean climbOver(Creature c) {
-
-       if (heightToClimb >= c.getClimbHeight()) {
-           return hasClimbed = true;
-       } else {
-           return hasClimbed = false;
-       }
+    public Wall (Integer WallHeight){
+        this.Height = WallHeight;
     }
 
-    public void printHasClimbed () {
-        if (hasClimbed = true) {
-            System.out.println("has jumped");
+    @Override
+    public Boolean Execute (String Subject, Integer MaxHeight, Integer MaxDistance) {
+        if (MaxHeight<Height) {
+            System.out.println(Subject + " jumped successfully");
+            return false;
         } else {
-            System.out.println("has not jumped");
+            System.out.println(Subject + " failed to jump");
+            return true;
         }
     }
 }
+
+ 
+

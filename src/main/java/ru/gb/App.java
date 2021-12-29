@@ -4,18 +4,20 @@ public class App {
     public static void main(String[] args) {
 
         Creature[] creatures = {
-                new Human(20, 5),
-                new Cat(2,3),
-                new Robot(22,7)
+                new Human("Anton"),
+                new Cat("Boriska"),
+                new Robot("Siri")
+        };
 
-
+        Obstacles[] obstacles = {
+                new Wall(100),
+                new runningTrack(200)
         };
 
         for (Creature creature : creatures) {
-            creature.jump();
-            creature.run();
-            creature.runOver(creature);
-            creature.climbOver(creature);
+            for (Obstacles obstacle : obstacles) {
+                obstacle.Execute(creature.getType() + " " + creature.getName(), creature.getMyJump(), creature.getMyRun());
+            }
         }
     }
 }
